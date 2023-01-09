@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class aquarium {
+    public static void main( String[] args ) {
+        Scanner scanner = new Scanner ( System.in );
+        int lenght = Integer.parseInt ( scanner.nextLine ()  );
+        int weight = Integer.parseInt ( scanner.nextLine () );
+        int height = Integer.parseInt ( scanner.nextLine () );
+        double percentFilledSpace = Double.parseDouble ( scanner.nextLine () );
+        double VolumeInLitres = (lenght*weight*height)*0.001;
+        double  neededLitres = VolumeInLitres*(1-percentFilledSpace/100);
+        System.out.println (neededLitres);
+
+    }
+}
